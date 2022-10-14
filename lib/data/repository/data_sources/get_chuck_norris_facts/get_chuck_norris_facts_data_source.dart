@@ -1,5 +1,5 @@
 import 'package:chuck_norris_facts/data/network/api_network.dart';
-import 'package:chuck_norris_facts/data/repository/data_sources/result/joke_json.dart';
+import 'package:chuck_norris_facts/data/repository/data_sources/get_chuck_norris_facts/result/joke_json.dart';
 
 class GetChuckNorrisFactsDataSource {
   final ApiService _apiService;
@@ -14,7 +14,6 @@ class GetChuckNorrisFactsDataSource {
     return JokeJson.fromJson(jokeJson);
   }
 }
-
 
 // {
 // "icon_url" : "https://assets.chucknorris.host/img/avatar/chuck-norris.png",

@@ -6,6 +6,7 @@ class GetChuckNorrisFactsUseCase {
 
   GetChuckNorrisFactsUseCase(this._getChuckNorrisFactsRepository);
 
+  // Take a query
   Future<Joke> getJoke() async =>
       await _getChuckNorrisFactsRepository.getJoke();
 }
